@@ -36,7 +36,7 @@ const PageHeaders = () => (
           name: 'Non Interactive',
           clientId: 'DUq0xuJZAD7RvezvqCrA6hpJVb6iDUip'
         }}
-        logo={<Avatar image={ClientTypeImages.non_interactive} />}
+        logo={<Avatar source={ClientTypeImages.non_interactive} />}
         breadcrumb={{
           content: 'Clients',
           link: '/clients'

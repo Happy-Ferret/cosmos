@@ -17,7 +17,7 @@ class Client extends React.Component {
             name: 'Non Interactive',
             clientId: this.props.match.params.clientId
           }}
-          logo={<Avatar image={ClientTypeImages.non_interactive} />}
+          logo={<Avatar source={ClientTypeImages.non_interactive} />}
           breadcrumb={{
             content: 'Clients',
             link: '/clients'

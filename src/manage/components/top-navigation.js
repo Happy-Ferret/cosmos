@@ -198,7 +198,7 @@ export default () => (
               <a href="">
                 <UserDropdown>
                   <div className="tenant-name">cosmos-demo</div>
-                  <Avatar size={24} backgroundColor={colors.base.orange} image={<AvatarLogo />} />
+                  <Avatar size="small" source={<AvatarLogo />} />
                   <Icon name="chevron-down" size={10} color={colors.text.default} />
                 </UserDropdown>
               </a>

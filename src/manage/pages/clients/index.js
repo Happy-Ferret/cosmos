@@ -116,7 +116,7 @@ class ClientList extends React.Component {
           {clients.map(client => (
             <Stack key={client.id} widths={[35, 40, 25]}>
               <NameGroup>
-                <Avatar size={48} image={client.image} />
+                <Avatar size="medium" source={client.image} />
                 <div>
                   <Link href={`/clients/${client.id}`}>{client.name}</Link>
                   <Type>{client.type}</Type>
