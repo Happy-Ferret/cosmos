@@ -2,32 +2,38 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
+const sizeContent = {
+  small: '24px',
+  medium: '48px',
+  large: '72px'
+}
+
 const StyledAvatar = styled.span`
-  width: ${props => props.size}px;
-  height: ${props => props.size}px;
-  background-color: ${props => props.backgroundColor};
-  border-radius: 50%;
+  width: ${props => sizeContent[props.size]};
+  height: ${props => sizeContent[props.size]};
+  background-color: #f1f1f1;
+  border-radius: ${props => (props.round ? '50%' : '3px')};
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 `
 
-const Avatar = props => <StyledAvatar {...props}>{props.image}</StyledAvatar>
+const Avatar = props => <StyledAvatar {...props}>{props.source}</StyledAvatar>
 
 Avatar.propTypes = {
   /** Avatar size */
-  size: PropTypes.number,
-  /** Avatar background color */
-  backgroundColor: PropTypes.string,
+  size: PropTypes.PropTypes.oneOf(['small', 'medium', 'large']),
   /** Content image or symbol */
-  image: PropTypes.string
+  source: PropTypes.string,
+  /** Round the avatar corners */
+  round: PropTypes.bool
 }
 
 Avatar.defaultProps = {
-  size: 72,
-  backgroundColor: '#F1F1F1',
-  image: null
+  size: 'large',
+  source: null,
+  round: false
 }
 
 export default Avatar
