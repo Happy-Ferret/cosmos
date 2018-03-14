@@ -2,10 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
+import { misc } from 'auth0-cosmos-tokens'
+
 const sizeContent = {
-  small: '24px',
-  medium: '48px',
-  large: '72px'
+  small: misc.avatar.small,
+  medium: misc.avatar.medium,
+  large: misc.avatar.large
 }
 
 const StyledAvatar = styled.span`
