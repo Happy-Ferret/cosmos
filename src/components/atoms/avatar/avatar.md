@@ -1,6 +1,6 @@
 ```meta
   category: Actions
-  description: Avatar component contains images or symbols.
+  description: Avatar component contains images.
 ```
 
 `import { Avatar } from 'auth0-cosmos'`
