@@ -6,5 +6,5 @@
 `import { Avatar } from 'auth0-cosmos'`
 
 ```jsx
-<Avatar source={<Icon name="help" />} {props} />
+<Avatar source={<Logo />} {props} />
 ```
