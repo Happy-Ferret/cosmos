@@ -27,12 +27,12 @@ const Thumbnail = props => <StyledThumbnail {...props}>{props.source}</StyledThu
 Thumbnail.propTypes = {
   /** Thumbnail size */
   size: PropTypes.PropTypes.oneOf(['small', 'medium', 'large']),
-  /** Thumbnail image */
+  /** Thumbnail image or icon using its corresponding component */
   source: PropTypes.string
 }
 
 Thumbnail.defaultProps = {
-  size: 'large',
+  size: 'medium',
   source: null
 }
 
