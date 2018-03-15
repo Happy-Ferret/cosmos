@@ -6,5 +6,5 @@
 `import { Thumbnail } from 'auth0-cosmos'`
 
 ```jsx
-<Thumbnail source={<Logo />} {props} />
+<Thumbnail source={<Icon name="help" />} {props} />
 ```

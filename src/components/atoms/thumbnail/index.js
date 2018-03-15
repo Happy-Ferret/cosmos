@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-import { misc } from 'auth0-cosmos-tokens'
+import { misc, colors } from 'auth0-cosmos-tokens'
 
 const sizeContent = {
   small: misc.avatar.small,
@@ -13,8 +13,9 @@ const sizeContent = {
 const StyledThumbnail = styled.span`
   width: ${props => sizeContent[props.size]};
   height: ${props => sizeContent[props.size]};
-  background-color: #f1f1f1;
+  background-color: ${colors.base.grayLightest};
   border-radius: 3px;
+  border: 1px solid ${colors.base.grayLight};
   text-align: center;
   display: flex;
   align-items: center;
