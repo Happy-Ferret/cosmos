@@ -24,7 +24,7 @@ const StyledAvatar = styled.span`
   text-align: center;
   display: -webkit-box;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   overflow: hidden;
   margin-right: ${props => (props.name ? spacing.xsmall : null)};
 
