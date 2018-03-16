@@ -20,6 +20,7 @@ const StyledThumbnail = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 `
 
 const Thumbnail = props => <StyledThumbnail {...props}>{props.source}</StyledThumbnail>

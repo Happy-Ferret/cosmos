@@ -26,10 +26,11 @@ const StyledAvatar = styled.span`
   align-items: center;
   justify-content: center;
   margin-right: ${spacing.xsmall};
+  overflow: hidden;
 
   img {
-    min-width: 100%;
-    min-height: 100%;
+    height: 100%;
+    user-select: none;
   }
 `
 
