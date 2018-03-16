@@ -11,9 +11,9 @@ const sizeContent = {
 }
 
 const ContentAvatar = styled.div`
-  display: inline-flex;
+  display: -webkit-box;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 `
 
 const StyledAvatar = styled.span`
@@ -22,11 +22,11 @@ const StyledAvatar = styled.span`
   background-color: ${colors.base.grayLightest};
   border-radius: 50%;
   text-align: center;
-  display: flex;
+  display: -webkit-box;
   align-items: center;
-  justify-content: center;
-  margin-right: ${props => (props.name ? spacing.xsmall : null)};
+  justify-content: start;
   overflow: hidden;
+  margin-right: ${props => (props.name ? spacing.xsmall : null)};
 
   img {
     height: 100%;
