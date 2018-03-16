@@ -10,9 +10,9 @@ const StyledImage = styled.img`
 const Image = props => <StyledImage src={props.source} alt={props.alt} {...props} />
 
 Image.propTypes = {
-  /** Url of the image */
+  /** URL of the image */
   source: PropTypes.string.isRequired,
-  /** Information of the image */
+  /** Alt info for the image */
   alt: PropTypes.string
 }
 
