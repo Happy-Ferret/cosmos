@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
+import Image from '../image'
+
 import { misc, colors, spacing } from 'auth0-cosmos-tokens'
 
 const sizeContent = {
@@ -39,7 +41,7 @@ const Avatar = props => {
     return (
       <ContentAvatar>
         <StyledAvatar {...props}>
-          <img src={props.image} alt="" />
+          <Image source={props.image} />
         </StyledAvatar>
         <span>{props.name}</span>
       </ContentAvatar>
@@ -47,7 +49,7 @@ const Avatar = props => {
   } else
     return (
       <StyledAvatar {...props}>
-        <img src={props.image} alt="" />
+        <Image source={props.image} />
       </StyledAvatar>
     )
 }
