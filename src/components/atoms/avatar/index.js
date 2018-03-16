@@ -25,7 +25,7 @@ const StyledAvatar = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: ${spacing.xsmall};
+  margin-right: ${props => (props.name ? spacing.xsmall : null)};
   overflow: hidden;
 
   img {
