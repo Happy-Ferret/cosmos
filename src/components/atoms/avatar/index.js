@@ -22,7 +22,7 @@ const StyledAvatar = styled.span`
   background-color: ${colors.base.grayLightest};
   border-radius: 50%;
   text-align: center;
-  display: -webkit-box;
+  display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
